@@ -1,1 +1,1 @@
-# GET-and-POST-checker
+The GET and POST checker assignment for CS290
