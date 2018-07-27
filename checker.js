@@ -13,8 +13,8 @@ app.get("/get", function (req, res) {
         postParams.push({ "name": p, "value": req.query[p] });
     }
     var context = {};
-    context.datalist = postParams;
-    res.render("post", context);
+    context.dataList = postParams;
+    res.render("get", context);
 
 });
 
