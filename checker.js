@@ -8,12 +8,12 @@ app.set("view engine", "handlebars");
 app.set("port", 8074);
 
 app.get("/get", function (req, res) {
-    var postParams = [];
+    var getParams = [];
     for (var p in req.query) {
-        postParams.push({ "name": p, "value": req.query[p] });
+        getParams.push({ 'name': p, 'value': req.query[p] });
     }
     var context = {};
-    context.dataList = postParams;
+    context.dataList = getParams;
     res.render("get", context);
 
 });
