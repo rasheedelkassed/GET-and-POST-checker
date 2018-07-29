@@ -1,4 +1,5 @@
 var express = require("express");
+var foo = bar;
 
 var app = express();
 var handlebars = require("express-handlebars").create({ defaultLayout: "main" });
