@@ -28,7 +28,7 @@ app.post("/", function (req, res) {
         postParams.push({ 'name': p, 'value': req.query[p] });
     }
 	var context = {};
-    context.dataList = getParams;
+    context.dataList = postParams;
     res.render("post", context);
 });
 
