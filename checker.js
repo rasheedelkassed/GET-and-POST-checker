@@ -24,8 +24,8 @@ app.get("/", function (req, res) {
 
 app.post("/", function (req, res) {
 	var postParams = [];
-    for (var p in req.query) {
-        postParams.push({ 'name': p, 'value': req.query[p] });
+    for (var p in req.body) {
+        postParams.push({ 'name': p, 'value': req.body[p] });
     }
 	var context = {};
     context.dataList = postParams;
